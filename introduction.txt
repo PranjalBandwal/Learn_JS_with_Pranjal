@@ -1,0 +1,61 @@
+In a computer programming language, a statement is a line of code commanding a task. Every program consists of a sequence of statements.
+JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
+JavaScript is case-sensitive and uses the Unicode character set.
+JavaScript has three kinds of variable declarations.
+var
+Declares a variable, optionally initializing it to a value.
+
+let
+Declares a block-scoped, local variable, optionally initializing it to a value.
+
+const
+Declares a block-scoped, read-only named constant.
+
+Variables
+You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+
+Identifier
+An identifier is a sequence of characters in the code that identifies a variable, function, or property. In most languages, identifiers are case-sensitive and not quoted.
+In JavaScript, identifiers can contain Unicode letters, $, _, and digits (0-9), but may not start with a digit. An identifier differs from a string in that a string is data, while an identifier is part of the code.
+Unicode
+Unicode is a standard character set that numbers and defines characters from the world's different languages, writing systems, and symbols.The most common Unicode character encoding on the Web is UTF-8. 
+
+#Declaring_variables
+You can declare a variable in two ways:
+
+With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables, depending on the execution context.
+With the keyword const or let. For example, let y = 13. This syntax can be used to declare a block-scope local variable.
+
+Strict mode
+Note: Sometimes you'll see the default, non-strict mode referred to as sloppy mode. This isn't an official term, but be aware of it, just in case.
+JavaScript's strict mode is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of "sloppy mode". 
+Strict mode isn't just a subset: it intentionally has different semantics from normal code. 
+Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode.
+Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
+
+Strict mode makes several changes to normal JavaScript semantics:
+1. Eliminates some JavaScript silent errors by changing them to throw errors.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
+
+#Invoking strict mode
+Strict mode applies to entire scripts or to individual functions. It doesn't apply to block statements enclosed in {} braces; attempting to apply it to such contexts does nothing.
+
+Strict mode for scripts
+To invoke strict mode for an entire script, put the exact statement "use strict"; (or 'use strict';) before any other statements.
+// Whole-script strict mode syntax
+"use strict";
+const v = "Hi! I'm a strict mode script!";
+
+Strict mode for functions
+Likewise, to invoke strict mode for a function, put the exact statement "use strict"; (or 'use strict';) in the function's body before any other statements.
+  function myStrictFunction() {
+  // Function-level strict mode syntax
+  "use strict";
+  function nested() {
+    return "And so am I!";
+  }
+  return `Hi! I'm a strict mode function! ${nested()}`;
+}
+function myNotStrictFunction() {
+  return "I'm not strict.";
+}
