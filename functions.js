@@ -52,3 +52,17 @@ function accessarray(anyarray){
 
 // we can also pass array as the argument--
 // console.log(accessarray([200,400,100,500]));
+
+
+//basic function
+console.log(addone(5));// in basic function we can call the function before the declaration
+function addone(num){
+  return num+1
+}
+
+//expression - where a variable holds the function
+//we can not call the function before its declaration
+const addtwo=function(num1){
+  return num1+2
+}
+console.log(addtwo(2));
