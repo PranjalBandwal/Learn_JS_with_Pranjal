@@ -59,3 +59,7 @@ Likewise, to invoke strict mode for a function, put the exact statement "use str
 function myNotStrictFunction() {
   return "I'm not strict.";
 }
+
+
+Destructuring assignment
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
