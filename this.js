@@ -1,5 +1,6 @@
 // function in object--
 // we used 'this' to refer current context
+
 const newobj={
   username:"Pranjal",
   id:123,

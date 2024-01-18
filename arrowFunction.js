@@ -1,3 +1,6 @@
+//ES6 released arrow function
+
+
 "use-strict"
 const newobj={
   a:123,
@@ -23,3 +26,6 @@ const arrowfunstion= () => {
 const arrowfunstion1= (a,b,...c) => [...c]
 console.log(arrowfunstion1(1,2,3,4,5,6,7));
 
+
+let newfunc =()=> ({username:"Pranjal",id:12})
+console.log(newfunc());
