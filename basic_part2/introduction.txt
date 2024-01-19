@@ -60,6 +60,19 @@ function myNotStrictFunction() {
   return "I'm not strict.";
 }
 
+##Diff b/w == and === :
+== checks if the values are equal or not
+=== checks strictly with their types aswell 
+ex:
+if(2=="2"){
+console.log("executed")}
+//expected output- executed
+
+if(2==="2"){
+console.log("executed")
+}
+//expected output- nothing
+
 
 Destructuring assignment
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
