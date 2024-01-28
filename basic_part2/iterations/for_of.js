@@ -25,8 +25,8 @@ map.set('name',"Bandwal") // this will override the value
 // console.log(map.get(1));
 // console.log(map.get('name'));
 
-for (const iterator of map) {
-  console.log(iterator);
+for (const [key,value] of map) {
+  console.log(value);
 }
-map.delete(1)
+// map.delete()
 console.log(map.size);
