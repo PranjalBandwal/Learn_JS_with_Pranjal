@@ -3,4 +3,7 @@ const myobj={
   id:102,
   'fruit':"apple"
 }
-console.log(myobj);
+// console.log(myobj);
+for (const key in myobj) {
+  console.log(key);
+}
