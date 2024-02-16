@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4bb44;
+}
+#card {
+  margin-top: 70px;
+  width: 25%;
+  height: 350px;
+  border-radius: 1rem;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 60%;
+  border-radius: 1rem;
+}
+h2 {
+  margin: 10px 0;
+}
+h5 {
+  margin: 10px 0;
+}
+#btn {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#btn-follow {
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 0.9rem;
+  background-color: orange;
+  color: white;
+}
+#btn-unfollow {
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 0.7rem;
+  background-color: #c04000;
+  color: white;
+}
